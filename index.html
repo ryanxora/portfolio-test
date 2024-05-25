@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- hero-section -->
+
+    <header class="navbar">
+
+
+        <!-- logo -->
+        <span class="logo">Ryan<span>Dev</span></span>
+
+
+        <!-- navigation-menu -->
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-list"><a href="#hero" class="nav-item">Home</a></li>
+                <li class="nav-list"><a href="#about" class="nav-item">About Me</a></li>
+                <li class="nav-list"><a href="#portfolio" class="nav-item">Portfolio</a></li>
+                <li class="nav-list"><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- hamburger -->
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+    </header>
+
+
+    <!-- section hero -->
+
+    <section id="hero">
+        
+
+        <!-- hero text -->
+        <div class="hero-txt-wrap hidden-left">
+            <h1 >Hi, I'm <span>Ryan</span></h1>
+            <h2>front-end web developer</h2>
+            <p>Hi, I'm Ryan, a passionate front-end web developer specializing in creating elegant and functional websites. With a keen eye for design and a dedication to crafting seamless user experiences, I turn ideas into reality on the web.</p>
+            <button id="hero-btn">View Portfolio</button>  
+        </div>
+
+        <!-- hero-img -->
+        <div class="hero-img hidden-right">
+            
+            <div class="hero-img-wrap">
+                <img src="Images/myself/Hero-img.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- about me section -->
+
+    <section id="about">
+
+        <div class="about-img">
+            <div class="about-img-wrap hidden-left">
+                <img src="Images/myself/About-img.png" alt="">
+            </div>
+        </div>
+
+
+        <!-- about text -->
+        <div class="about-text hidden-right" style="transition-duration: 2s; transition-delay: 0ms;">
+            <h2>About Me</h2>
+            <p>I'm a front-end web developer with a passion for creating elegant and user-friendly websites. I specialize in HTML, CSS, JavaScript, and modern frameworks like React and Vue.js.</p>
+            
+
+            <!-- skills panel -->
+            <div class="skills-panel ">
+
+                <div class="skills-each">
+                    <img src="Images/skills/html5.svg" alt="">
+                </div>
+
+                <div class="skills-each">
+                    <img src="Images/skills/css3.svg" alt="">
+                </div>
+
+                <div class="skills-each">
+                    <img src="Images/skills/javascript.svg" alt="">
+                </div>
+
+                <div class="skills-each">
+                    <img src="Images/skills/react.svg" alt="">
+                </div>
+
+                <div class="skills-each">
+                    <img src="Images/skills/vuejs.svg" alt="">
+                </div>
+                
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- portfolio section -->
+
+    <section id="portfolio">
+
+
+        <!-- portfolio main box-1 -->
+        <div class="grid-box-1 hidden-left">
+            <h4>#InstaGallery</h4>
+            <p>A sleek, responsive photo gallery web app that allows users to upload, organize, and share their favorite images. Built with React and Firebase for real-time data syncing.</p>
+            <button id="portfolio-button">Live Demo</button>
+
+            <div class="project-holder">
+                <img src="Images/portfolio/mockup.jpg" alt="">
+            </div>
+        </div>
+
+
+        <!-- portfolio main-box-2 -->
+        <div class="grid-box-2 hidden-right">
+            <div class="project-holder">
+                <img src="Images/portfolio/mockup.jpg" alt="">
+            </div>
+
+            <h4>#ShopSmart</h4>
+            <p>An e-commerce platform that offers a seamless shopping experience with features like product search, user reviews, and secure checkout.</p>
+            <button id="portfolio-button">Live Demo</button>
+        </div>
+
+        <!-- portfolio title -->
+        <div class="grid-box-3 hidden-left">
+            <h3>Projects &nbsp; Showcase</h3>
+        </div>
+
+        <!-- portfolio social links -->
+        <div class="grid-box-4 hidden-left">
+            <h5>Explore more projects on my <a href="https://github.com/" target="_blank">GitHub</a> page.</h5>
+
+            <div class="portfolio-links">
+                <div class="link-each">
+                    <img src="Images/portfolio/linkedin.1.svg" alt="">
+                </div>
+                <div class="link-each">
+                    <img src="Images/portfolio/twitter.2.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- portfolio project showcase -->
+        <div class="grid-box-5 hidden-right">
+
+            <div class="project-holder">
+                <div class="overlay">
+                    <h6>#TaskMaster Pro</h6>
+                </div>
+                <img src="Images/portfolio/mockup.jpg" alt="">
+            </div>
+
+            <div class="project-holder">
+                <div class="overlay">
+                    <h6>#TravelBuddy</h6>
+                </div>
+                <img src="Images/portfolio/mockup.jpg" alt="">
+            </div>
+
+            <div class="project-holder">
+                <div class="overlay">
+                    <h6>#FitTrack</h6>
+                </div>
+                <img src="Images/portfolio/mockup.jpg" alt="">
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- contact section -->
+
+
+    <section id="contact">
+
+        <div class="contact-txt hidden-left">
+            <h3>Get in Touch</h3>
+            <p>We'd love to hear from you! Whether you have a question, a project proposal, or just want to say hello, feel free to reach out. Please fill out the form below, and we will get back to you as soon as possible.</p>
+            
+        </div>
+
+        <div class="contact-form">
+
+            <div class="contact-form-wrap hidden-right">
+
+                <form action="your-form-handler-url" method="POST">
+
+                    <div class="input-each">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="input-each">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="input-each">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" id="submit-btn">Send Message</button>
+                    
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- footer section -->
+
+    <footer>
+
+        <!-- scroll to top -->
+
+        <div class="scroll-to-top"></div>
+
+        <!-- logo and email -->
+        <div class="logo-and-email">
+            <span class="logo">Ryan<span>Dev</span></span>
+            <p class="contact-email">Ryan@gmail.com</p>
+        </div>
+
+        <!-- social icons -->
+        <div class="social-icon-wrap">
+
+            <div class="s-icons-each">
+                <img src="Images/social media icons/github.svg" alt="">
+            </div>
+
+            <div class="s-icons-each">
+                <img src="Images/social media icons/instagram.svg" alt="">
+            </div>
+
+            <div class="s-icons-each">
+                <img src="Images/social media icons/linkedin.svg" alt="">
+            </div>
+
+            <div class="s-icons-each">
+                <img src="Images/social media icons/facebook.svg" alt="">
+            </div>
+            
+            
+        </div>
+
+        <!-- navigation footer -->
+        <div class="footer-navigation">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <div class="copyright">
+        <p>&copy; 2024 RyanDev. All rights reserved.</p>
+    </div>
+    
+</body>
+</html>

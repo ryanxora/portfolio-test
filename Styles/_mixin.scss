@@ -1,0 +1,84 @@
+@mixin button($bg-color, $text-color){
+    padding-inline: 24px;
+    height: 45px;
+    color: $text-color;
+    background-color: $bg-color;
+    border-radius: 5px;
+    font-size: $fz-base;
+    transition: background-color ease 0.3s;
+
+    &:hover{
+        background-color: darken($bg-color, 15%);
+    }
+    &:active{
+        background-color: lighten($bg-color, 5%);
+    }
+}
+
+
+
+@mixin flexbox($flex-direction : row, $justify : space-between){
+    display: flex;
+    flex-direction: $flex-direction;
+    align-items: center;
+    justify-content: $justify;
+}
+
+
+
+// mixin for animation
+
+
+@mixin fadeIn($duration, $ease, $delay) {
+    opacity: 0;
+    transition: opacity $duration $ease $delay;
+    
+    &.show {
+      opacity: 1;
+    }
+  }
+  
+  // Usage Example
+//   .hidden {
+//     @include fadeIn(1s, ease-in-out, 0s);
+//   }
+  
+
+
+
+// @mixin hiddenState {
+//     opacity: 0;
+//     filter: blur(5px);
+//     transform: translateX(-100%);
+//     transition: all 1s;
+// }
+
+// // Define mixin for show state
+// @mixin showState {
+//     opacity: 1;
+//     filter: blur(0px);
+//     transform: translateX(0);
+// }
+
+
+@mixin hiddenStateLeft {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+// Define mixin for hidden state (right-to-left)
+@mixin hiddenStateRight {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+
+// Define mixin for show state
+@mixin showState {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}

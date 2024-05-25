@@ -1,0 +1,59 @@
+
+
+h1{
+    font-size: $fz-h1;
+    letter-spacing: -1%;
+    line-height: $fz-h1 * 1.1;
+}
+
+h2{
+
+    font-size: $fz-h2;
+    letter-spacing: -1%;
+    line-height: $fz-h2 * 1.15;
+}
+
+h3{
+
+    font-size: $fz-h3;
+    line-height: $fz-h3 * 1.2;
+}
+
+h4{
+
+    font-size: $fz-h4;
+    line-height: $fz-h4 * 1.25;
+}
+
+h5{
+
+    font-size: $fz-h5;
+    line-height: $fz-h5 * 1.3;
+}
+
+h6{
+
+    font-size: $fz-h6;
+    line-height: $fz-h6 * 1.35;
+}
+
+p{
+
+    font-size: $fz-p;
+    line-height: $fz-p * 1.4;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+
+}
+
+span{
+    font-family: "Lato", sans-serif;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+
