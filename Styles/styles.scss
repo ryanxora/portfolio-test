@@ -236,7 +236,7 @@
             // hero-main img
             img{    
                 position: absolute;
-                width: min(400px, 40vw);
+                width: min(400px, 50vw);
                 bottom: 0px;
                 left: 20px;
                 
@@ -1063,22 +1063,28 @@ footer{
     flex-wrap: wrap;
     position: relative;
 
-    .scroll-to-top{
-        position: absolute;
+    .scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
         width: 35px;
         height: 35px;
-        background-color: rebeccapurple;
-        top: -50px;
-        right: 20px;
+        background-color: $Primary;
         cursor: pointer;
-        transition: position 0.3s ease, top 0.3s ease; // Smooth transition for position and top changes
-
-        &.fixed {
-            position: sticky;
-            top: 20px; // Adjust as needed
-            right: 20px; // Adjust as needed
+        border-radius: 3px;
+        @include flexbox(row, center);
+        transition: top 0.3s ease; // Only transition the 'top' property
+    
+        img {
+            width: 25px;
+            height: 25px;
         }
     }
+    
+    .fixed {
+        top: calc(100% - 55px); // Adjust as needed
+    }
+    
 
     .logo-and-email{
         

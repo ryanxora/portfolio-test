@@ -114,19 +114,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // scroll to top
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const scrollToTopButton = document.querySelector('.scroll-to-top');
     const footer = document.querySelector('footer');
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > footer.offsetTop) {
-            scrollToTopButton.classList.add('fixed');
+    function toggleScrollButton() {
+        if (window.scrollY > (footer.offsetTop - window.innerHeight)) {
+            scrollToTopButton.style.display = 'none';
         } else {
-            scrollToTopButton.classList.remove('fixed');
+            scrollToTopButton.style.display = 'flex';
         }
-    });
+    }
+
+    window.addEventListener('scroll', toggleScrollButton);
 
     scrollToTopButton.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+

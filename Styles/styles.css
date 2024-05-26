@@ -518,7 +518,7 @@ span {
 }
 #hero .hero-img .hero-img-wrap img {
   position: absolute;
-  width: min(400px, 40vw);
+  width: min(400px, 50vw);
   bottom: 0px;
   left: 20px;
 }
@@ -1276,19 +1276,26 @@ footer {
   position: relative;
 }
 footer .scroll-to-top {
-  position: absolute;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   width: 35px;
   height: 35px;
-  background-color: rebeccapurple;
-  top: -50px;
-  right: 20px;
+  background-color: #252466;
   cursor: pointer;
-  transition: position 0.3s ease, top 0.3s ease;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: top 0.3s ease;
 }
-footer .scroll-to-top.fixed {
-  position: sticky;
-  top: 20px;
-  right: 20px;
+footer .scroll-to-top img {
+  width: 25px;
+  height: 25px;
+}
+footer .fixed {
+  top: calc(100% - 55px);
 }
 footer .logo-and-email {
   flex: 1;
